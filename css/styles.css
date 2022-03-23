@@ -1,0 +1,108 @@
+/* General settings for the page */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+body {
+    max-width: 1440px;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+/* Header styling */
+h1 a {
+    font-size: 28px;
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+a {
+    color: #000000;
+}
+h2 {
+    font-size: 28px;
+    color: #E09500;
+}
+h3, h3 a {
+    font-size: 24px;
+    color: #0767f7;
+}
+.details a {
+    font-size: 14px;
+    text-decoration: none;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    padding: 0px 50px;
+    align-items: center;
+    box-shadow: 0px -5px 2px 0px rgba(0,0,0, .15);
+}
+nav ul {
+    display: flex;
+}
+nav ul li {
+    padding: 16px 30px;
+    margin: 0px 20px;
+}
+nav a, .buybtn {
+    font-size: 18px;
+}
+header div {
+    display: flex;
+    flex-direction: column;
+}
+.buybtn {
+    background: #F7A502;
+    padding: 16px 40px;
+    box-shadow: 4px 4px 4px 0px rgba(0,0,0, .25);
+}
+.details img {
+    padding: 10px 10px 0px 0px;
+}
+.details span {
+    position: relative;
+    bottom: 15px;
+}
+
+
+/* Content styling */
+section {
+    margin: 20px 30px;
+    display: flex;
+}
+.photo {
+    box-shadow: 4px 4px 4px 0px rgba(0,0,0, .25);
+}
+.inverse {
+    flex-direction: row-reverse;
+}
+.thumbContainer img {
+    width: 137px;
+    margin: 5px 15px;
+}
+.imageContainer {
+    margin: 0px 120px;
+}
+.textbox p {
+    margin: 20px 30px;
+}
+.textbox h3 {
+    margin: 50px 30px;
+}
+
+
+/* Footer styling */
+footer {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px -5px 2px 0px rgba(0,0,0, .15);
+    width: 100%;
+    margin: 20px 0px;
+}
+
