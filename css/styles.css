@@ -10,6 +10,8 @@ body {
     max-width: 1440px;
     box-sizing: border-box;
     margin: auto;
+    display: grid;
+    height: 100vh;
 }
 
 /* Header styling */
@@ -27,7 +29,7 @@ h2 {
     font-size: 28px;
     color: #E09500;
 }
-h3, h3 a {
+h3, h3 a, .rating a {
     font-size: 24px;
     color: #0767f7;
 }
@@ -41,7 +43,7 @@ header {
     margin-top: 25px;
     padding: 0px 50px;
     align-items: center;
-    box-shadow: 0px -5px 2px 0px rgba(0,0,0, .15);
+    border-top: 5px solid rgba(0,0,0, .075);
 }
 nav ul {
     display: flex;
@@ -95,14 +97,73 @@ section {
 .textbox h3 {
     margin: 50px 30px;
 }
+.round {
+    height: 155px;
+    width: 155px;
+    border-radius: 50%;
+    grid-column: 1;
+}
+/* Grid used to place items in the correct places */
+.spread {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+.rating {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 30px;
+    padding: 10px 30px;
+    width: 300px;
+    grid-column: 2;
+}
+.rating img {
+    width: 80%;
+    margin: 20px 0;
+}
+.badgecontainer {
+    display: flex;
+    margin: auto;
+    grid-column: 3/5;
+}
+.badgecontainer img {
+    width: 80%;
+    height: 90%;
+}
+.gas {
+    grid-column: 7/12;
+    grid-row: 1;
+}
+.limited {
+    width: 200%;
+    grid-column: 11/12;
+    grid-row: 1;
+    
+}
 
 
-/* Footer styling */
+/* Footer styling (grid row only set to unrealistic amount to stick it to the bottom without using negative margins*/
 footer {
+    grid-row: 200;
     display: flex;
     justify-content: space-between;
-    box-shadow: 0px -5px 2px 0px rgba(0,0,0, .15);
+    border-top: 5px solid rgba(0,0,0, .075);
     width: 100%;
     margin: 20px 0px;
+}
+footer ul {
+    display: flex;
+    margin: 10px 30px;
+}
+footer ul li {
+    margin: 5px 30px;
+}
+footer ul li a {
+    padding: 10px;
+}
+.fa-facebook-square {
+    color: #4267B2;
+}
+.fa-twitter-square {
+    color: #00ACEE;
 }
 
