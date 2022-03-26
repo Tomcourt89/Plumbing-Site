@@ -1,0 +1,51 @@
+/* Grid used to place items in the correct places */
+body {
+    display: grid;
+}
+.round {
+    grid-column: 1;
+}
+.spread {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+.rating {
+    grid-column: 2;
+}
+.badgecontainer {
+    grid-column: 3/5;
+}
+.gas {
+    grid-column: 7/12;
+    grid-row: 1;
+}
+.limited {
+    width: 200%;
+    grid-column: 11/12;
+    grid-row: 1;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+.coverage {
+    grid-column: 1/ span 4;
+    grid-row: 1;
+}
+.emph {
+    grid-row: 3;
+}
+.wider {
+    grid-column: 1/ span 6;
+    grid-row: 5;
+}
+.wider img {
+    width: 30%;
+    margin: 0px 20px;
+}
+.map {
+    grid-column: 7/ span 10;
+    grid-row: 1/ 8;
+    width: 100%;
+}

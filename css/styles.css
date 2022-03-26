@@ -11,7 +11,6 @@ body {
     max-width: 1440px;
     box-sizing: border-box;
     margin: auto;
-    display: grid;
     height: 100vh;
 }
 
@@ -104,12 +103,6 @@ section {
     height: 155px;
     width: 155px;
     border-radius: 50%;
-    grid-column: 1;
-}
-/* Grid used to place items in the correct places */
-.spread {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
 }
 .rating {
     display: flex;
@@ -117,7 +110,6 @@ section {
     margin: 0px 30px;
     padding: 10px 30px;
     width: 300px;
-    grid-column: 2;
 }
 .rating img {
     width: 80%;
@@ -126,20 +118,10 @@ section {
 .badgecontainer {
     display: flex;
     margin: auto;
-    grid-column: 3/5;
 }
 .badgecontainer img {
     width: 80%;
     height: 90%;
-}
-.gas {
-    grid-column: 7/12;
-    grid-row: 1;
-}
-.limited {
-    width: 200%;
-    grid-column: 11/12;
-    grid-row: 1;
 }
 .service {
     display: flex;
@@ -165,6 +147,14 @@ section ul {
 }
 .servicepic {
     margin: 20px;
+}
+.coverage {
+    margin: 50px 50px;
+}
+.emph {
+    padding: 80px 0px;
+    border-top: 5px solid rgba(0,0,0, .075);
+    border-bottom: 5px solid rgba(0,0,0, .075);
 }
 
 
