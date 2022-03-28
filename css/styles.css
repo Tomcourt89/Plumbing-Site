@@ -12,6 +12,9 @@ body {
     box-sizing: border-box;
     margin: auto;
     height: 100vh;
+    background-image: url(../images/background.svg);
+    background-repeat: repeat-y;
+    background-position: center top;
 }
 
 /* Header styling */
@@ -45,6 +48,7 @@ header {
     padding: 0px 20px;
     align-items: center;
     border-top: 5px solid rgba(0,0,0, .075);
+    background: rgba(0,0,0,0);
 }
 nav ul {
     display: flex;
