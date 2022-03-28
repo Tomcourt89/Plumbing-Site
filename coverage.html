@@ -7,6 +7,7 @@
     <title>Coverage</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/grid.css">
+    <script src="js/script.js"></script>
     <script src="https://kit.fontawesome.com/6f7092e937.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,13 +26,31 @@
             </ul>
         </nav>
         
-        <div><a href="#" class="buybtn">QUOTE</a></div>
+        <div class="buybtn" onclick="openQuote()">QUOTE</div>
 
         <div class="details">
             <a href=""><img src="images/phonemed.svg" alt="phone icon"><span>07777 012345</span></a>
             <a href=""><img src="images/emailmed.svg" alt="email icon"><span>jtbheating@gmail.com</span></a>
         </div>
     </header>
+
+    <!-- Default set to display none -->
+    <section>
+        <div class="quote" id="quotepop">
+            <p>Our same day quotation service will give you the information you need.</p>
+            <p>Just let us know which of our services you would like a quote for and leave your contact details and we will get back to you within 24 hours.</p>
+
+            <form action="#">
+                <input type="text" placeholder="Your Name...">
+                <input type="text" class="half" placeholder="Telephone Number...">
+                <input type="text" class="half" placeholder="Email...">
+                <input type="text" placeholder="Service you are inquiring about... (optional)">
+                <textarea placeholder="Message..."></textarea>
+                <a href="#" class="buybtn">Submit</a>
+            </form>
+            <i class="fa-solid fa-x fa-2xl" onclick="closeQuote()"></i>
+        </div>
+    </section>
 
     <h2>Coverage</h2>
 
@@ -55,6 +74,24 @@
         <!-- Coverage visual -->
         <img src="images/map.webp" class="photo map" alt="Map of Liverpool with highlighted postcodes">
     </article>
+
+    <!-- Default set to display none -->
+    <section class="quoteContainer">
+        <div class="quote">
+            <p>Our same day quotation service will give you the information you need.</p>
+            <p>Just let us know which of our services you would like a quote for and leave your contact details and we will get back to you within 24 hours.</p>
+
+            <form action="#">
+                <input type="text" placeholder="Your Name...">
+                <input type="text" class="half" placeholder="Telephone Number...">
+                <input type="text" class="half" placeholder="Email...">
+                <input type="text" placeholder="Service you are inquiring about... (optional)">
+                <textarea placeholder="Message..."></textarea>
+                <a href="#" class="buybtn">Submit</a>
+                <i class="fa-solid fa-x fa-2xl" onclick="close()"></i>
+            </form>
+        </div>
+    </section>
 
     <!-- Subnav and socials -->
     <footer>

@@ -11,10 +11,10 @@
             <stop offset="100%" style="stop-color:#ffffff; stop-opacity:1"/>
         </radialGradient>
         <rect width="1440" height="1024" fill="white"/>
-        <g opacity="0.19" filter="url(#filter0_df_247_1004)">
-            <ellipse cx="1021.5" cy="653" rx="336.5" ry="336" fill="url(#gradient2)"/>
+        <g opacity="0.13" filter="url(#filter0_df_247_1004)">
+            <ellipse cx="1051.5" cy="653" rx="336.5" ry="336" fill="url(#gradient2)"/>
         </g>
-        <g opacity="0.19" filter="url(#filter1_df_247_1004)">
+        <g opacity="0.13" filter="url(#filter1_df_247_1004)">
             <ellipse cx="316.5" cy="314" rx="336.5" ry="336" fill="url(#gradient1)"/>
         </g>
     </g>

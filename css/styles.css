@@ -15,6 +15,7 @@ body {
     background-image: url(../images/background.svg);
     background-repeat: repeat-y;
     background-position: center top;
+    background-size: contain;
 }
 
 /* Header styling */
@@ -68,6 +69,7 @@ header div {
     background: #F7A502;
     padding: 16px 60px;
     box-shadow: 4px 4px 4px 0px rgba(0,0,0, .25);
+    cursor: pointer;
 }
 .details img {
     padding: 10px 10px 0px 0px;
@@ -197,10 +199,53 @@ form input[type=text], textarea {
     margin: 10px 0px;
     padding: 20px 20px;
     box-sizing: border-box;
+    background: transparent;
+    border: 1px solid black;
 }
 form textarea {
     height: 50%;
     resize: none;
+    border: 1px solid black;
+}
+
+/* Popup styling */
+.quote {
+    display: none;
+    background: #217AFF;
+    width: 900px;
+    height: 600px;
+    padding: 10px 75px;
+    position: fixed;
+    margin-left: 180px;
+    box-shadow: 4px 4px 4px 0px rgba(0,0,0, .25);
+    z-index: 200;
+}
+.quote p {
+    margin: 10px 0px;
+}
+.quote form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.quote form input, .quote form textarea{
+    background: #ffffff;
+}
+.quote .buybtn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.quote .half {
+    flex-basis: 45%;
+}
+.fa-x {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    color: #ececec;
+    cursor: pointer;
 }
 
 
