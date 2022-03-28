@@ -62,7 +62,7 @@ header div {
 }
 .buybtn {
     background: #F7A502;
-    padding: 16px 40px;
+    padding: 16px 60px;
     box-shadow: 4px 4px 4px 0px rgba(0,0,0, .25);
 }
 .details img {
@@ -123,6 +123,8 @@ section {
     width: 80%;
     height: 90%;
 }
+
+/* Services */
 .service {
     display: flex;
     flex-direction: column;
@@ -148,6 +150,8 @@ section ul {
 .servicepic {
     margin: 20px;
 }
+
+/* Coverage */
 .coverage {
     margin: 50px 50px;
 }
@@ -157,11 +161,47 @@ section ul {
     border-bottom: 5px solid rgba(0,0,0, .075);
 }
 
+/* Contact */
+article {
+    margin-top: 30px;
+}
+aside {
+    display: flex;
+    flex-direction: column;
+}
+aside section {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin-bottom: 100px;
+}
+.contact {
+    flex-direction: column;
+    margin: 0px 10px;
+}
+.subbtn {
+    background: #0261F0;
+    border: none;
+    color: #ffffff;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 16px 60px;
+    margin: 30px 0;
+    box-shadow: 4px 4px 4px 0px rgba(0,0,0, .25);
+}
+form input[type=text], textarea {
+    width: 100%;
+    margin: 10px 0px;
+    padding: 20px 20px;
+    box-sizing: border-box;
+}
+form textarea {
+    height: 50%;
+    resize: none;
+}
 
 
-/* Footer styling (grid row only set to unrealistic amount to stick it to the bottom without using negative margins*/
+/* Footer styling */
 footer {
-    grid-row: 200;
     display: flex;
     justify-content: space-between;
     border-top: 5px solid rgba(0,0,0, .075);

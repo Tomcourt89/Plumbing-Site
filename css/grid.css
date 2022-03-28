@@ -2,12 +2,13 @@
 body {
     display: grid;
 }
-.round {
-    grid-column: 1;
-}
+/* Index page nested grid for specific placement within a full width section */
 .spread {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+}
+.round {
+    grid-column: 1;
 }
 .rating {
     grid-column: 2;
@@ -25,10 +26,12 @@ body {
     grid-row: 1;
 }
 
-main {
+/* Coverage and contact pages full page grid to dictate the 60/40 ratio split */
+article {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
 }
+/* Placement of elements on coverage page */
 .coverage {
     grid-column: 1/ span 4;
     grid-row: 1;
@@ -48,4 +51,17 @@ main {
     grid-column: 7/ span 10;
     grid-row: 1/ 8;
     width: 100%;
+}
+/* Placement of elements on contact page */
+aside {
+    grid-row: 1;
+    grid-column: 1/ span 3;
+}
+form {
+    grid-column: 5/ span 10;
+    grid-row: 1;
+}
+/* Grid row only set to unrealistic amount to "stick" the footer to the bottom without using negative margins */
+footer {
+    grid-row: 200;
 }
